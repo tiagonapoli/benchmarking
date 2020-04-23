@@ -27,7 +27,15 @@ function run {
 
   nvm install $1
   nvm use $1
-  hyperfine --warmup 5 --min-runs 30 --style=full 'node simple-require.js' 'node require-file.js' 'node destructure-require.js' --export-markdown $OUTPUT_FILE
+  hyperfine --warmup 5 --min-runs 30 --style=full \
+    'node simple-require.js' \
+    'node simple-require-cache.js' \
+    'node require-file.js' \
+    'node require-file-cache.js' \
+    'node destructure-require.js' \
+    'node destructure-require-cache.js' \
+    --export-markdown $OUTPUT_FILE
+
   ../node_modules/.bin/envinfo envinfo --system --binaries --markdown >> $OUTPUT_FILE
 
   printf "\n\n"
@@ -36,4 +44,4 @@ function run {
 # Setup nvm
 . ~/.nvm/nvm.sh
 
-run 12.16.2
+run 14.0.0
