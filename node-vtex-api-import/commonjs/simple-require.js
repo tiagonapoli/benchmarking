@@ -1,0 +1,1 @@
+const vtexApi = require('@vtex/api')

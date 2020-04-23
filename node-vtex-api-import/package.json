@@ -1,0 +1,12 @@
+{
+  "name": "node-vtex-api-import",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@vtex/api": "^6.26.0"
+  },
+  "devDependencies": {
+    "envinfo": "^7.5.0"
+  }
+}

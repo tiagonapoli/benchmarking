@@ -1,0 +1,1 @@
+const clients = require('@vtex/api/lib/clients')
