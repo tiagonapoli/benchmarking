@@ -1,0 +1,21 @@
+{
+  "name": "koa-hello-world",
+  "description": "Koa 'hello world' app",
+  "version": "0.0.0",
+  "author": "Chris Veness",
+  "license": "MIT",
+  "main": "app.js",
+  "scripts": {
+    "start": "yarn 0x app.js",
+    "bench": "yarn autocannon http://localhost:3001"
+  },
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-handlebars": "^2.0.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "0x": "^4.9.1",
+    "autocannon": "^5.0.1"
+  }
+}
