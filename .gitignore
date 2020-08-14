@@ -1,2 +1,4 @@
 node_modules
 node-vtex-api-import/results
+tmp*
+*.log
